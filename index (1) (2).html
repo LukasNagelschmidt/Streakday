@@ -62,7 +62,7 @@ import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 // Supabase Dashboard > Project Settings > API: Projekt-URL und Publishable-Key eintragen.
 const SUPABASE_URL = "https://ndjadcorttisftqwvcvk.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_CTPByZUarOVdl9a7B-P71w_ZsrYdMuQ";
-const configured = SUPABASE_URL.startsWith("https://") && SUPABASE_PUBLISHABLE_KEY.startsWith("sb_publishable_") && !SUPABASE_PUBLISHABLE_KEY.includes("HIER_DEIN");
+const configured = SUPABASE_URL.startsWith("https://") && SUPABASE_PUBLISHABLE_KEY.startsWith("sb_publishable_") && !SUPABASE_PUBLISHABLE_KEY.includes("sb_publishable_CTPByZUarOVdl9a7B-P71w_ZsrYdMuQ");
 const supabase = configured ? createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
 let currentUser=null, profile=null, group=null, refreshTimer=null, realtimeChannel=null;
 const $ = id => document.getElementById(id);
